@@ -1,30 +1,24 @@
-var a1 = 0;
-var b1 = 0;
-var c1 = 0;
+
 
 export default class Calc {
 
-  getNumbers(a: number , b: number , c: number): void {
-a1 = a;
-b1 = b;
-c1 = c;
+     Mult(x: number , y: number, z: number) {
+         return x * y * z;
+    }
+     Add(x: number , y:number , z:number) {
+         return x + y + z;
 
     }
- displayMult():void {
-console.log("\n Multiplied: ");
-console.log (a1 * b1 * c1);
+     Sub(x: number , y:number , z:number ){
+         return x - y - z;
     }
-     displayAdd():void {
-console.log ("\n Added: ");
-console.log (a1 + b1 + c1);
-
-    }
-     displaySub():void {
-console.log("Subtracted: ")
-console.log (a1 - b1 - c1);
-    }
-     displayDiv():void {
-console.log("Divided: ")
-console.log (a1 / b1 / c1);
+     Div(x: number , y:number , z:number) {
+         return x / y / z;
     }
 }
+let c = new Calc;
+
+console.log(c.Add( 4 ,5 , 6));
+console.log(c.Sub( 4 ,5 , 6));
+console.log(c.Mult( 4 ,5 , 6));
+console.log(c.Div( 4 ,5 , 6));
