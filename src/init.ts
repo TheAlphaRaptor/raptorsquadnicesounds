@@ -1,5 +1,9 @@
-import Greeter from "./common/greeter/greeter";
+import Calc from "./common/Calc/Calc"
 
-var g = new Greeter("HELLO!");
+var h = new Calc;
 
-console.log(g.greet());
+h.getNumbers(1 , 2 , 3);
+h.displayAdd();
+h.displayDiv();
+h.displayMult();
+h.displaySub();
